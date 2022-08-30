@@ -1,2 +1,2 @@
 # TIL-_JJS
-하루동안 공부한거 올리기
+Today I Learned. 하루동안 공부한거 올리기
