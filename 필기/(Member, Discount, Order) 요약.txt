@@ -1,0 +1,20 @@
+//맴버
+Member 패키지 생성 -> Grade Enum을 만든 후 vip와 basic 을 설정함 -> 
+Member 클래스를 만든 후 id와 name, Grade타입으로 grade 선언 -> 
+각각의 선언들을 생성자를 만들어 외부에서 초기화 할 수 있도록 만든 다음, setter getter를 만들어 입력값을 받을 수 있도록 설정 -> 
+인터페이스로 MemberRepo를 만들어 회원 저장소를 만든다.  그 후 회원내용을 저장할 void save(Member member) 메서드와 회원조회할 Member findById(long memberId) 추상 메서드를 만든다.  ->
+MemoryMemberRepo를 클래스타입으로 MemberRepo를 implement하여 만들고 이곳은 회원의 id와 이름을 저장할 수 있도록 HashMap을 통해 store를 String과 Member 타입으로 선언한다. ->
+OverRide 한 메서드들을 put(member.getId , member) 와 ger(MemberId)를 통해 save, MemberFindById를 채운다. ->
+회원을 저장할 저장공간을 만들었으니 다음은 회원들이 이용할 수 있도록 MemberService를 인터페이스로 만든다. ->
+MemberService에는 로그인에 이용할 join과 회원 조회를 위한 findMember를 만든다. join은 Member member를 매개변수로 넣어준다. findMember에는 memberId로 조회할 수있도록 Long memberId를 넣어준다. ->
+실제 작동할 MemberServiceImpl을 class타입으로 만들고 MemberService를 implement 한다. ->
+Override 하고 MemberRepo memberRepo = new MemberRepo();를 통해 저장소를 가져온다. ->
+join 메서드에는 사용자가 등록한 것을 저장소에 넣어주기 위해 MemberRepo가 연결된 memberRepo를 통해 save 메서드를 실행시킨다. ->
+findMember 메서드에는 사용자가 멤버 조회를 하기 위해 memberRepo에 FindById에 (memberID)로 보낸다.
+
+
+//discount
+
+실행파일이 속해있는 클래스 앞에 @Configuration 달아주고 실행 객체 앞에 @Bean을 달아주어 등록
+이후 AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(클래스명.class)를 선언해서 스프링 컨테이너 만들고, 
+ac.getBean 을 통해 Bean 호출 이후 작동
