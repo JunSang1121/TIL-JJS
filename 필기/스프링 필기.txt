@@ -67,3 +67,11 @@ Filter (필터)
 
 includeFilter : 컴포넌트 스탠 대상을 추가로 지정한다.
 excludeFilter : 컴포넌트 스탠에서 제외할 대싱을 지정한다.
+
+
+
+FilterType 옵션
+
+1. ANNOTATION 기본값, 애노테이션을 인식해서 동작한다.
+	ex) org.exaple.SomeAnnotion
+
