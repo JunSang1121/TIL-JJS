@@ -72,6 +72,27 @@ excludeFilter : 컴포넌트 스탠에서 제외할 대싱을 지정한다.
 
 FilterType 옵션
 
-1. ANNOTATION 기본값, 애노테이션을 인식해서 동작한다.
+
+1. ANNOTATION: 기본값, 애노테이션을 인식해서 동작한다.
 	ex) org.exaple.SomeAnnotion
+
+2. ASSIGNABLE_TYPE: 지정한 타입과 자식 타입을 인식해서 동작한다.
+	ex) org.example.SomeClass
+
+3. ASPECTJ: AspectJ 패턴 사용
+	ex) org.example..*Service+
+
+4. REGEX: 정규 표현식
+	ex) org\.example\.Default.*
+
+5. CUSTOM: TypeFilter 이라는 인터페이스를 구현해서 처리
+	ex) org.example.MyTypeFilter
+
+
+
+중복 등록과 충동
+
+
+자동 vs 자동 -> 충돌 error
+자동 vs 수동 -> 수동 
 
