@@ -159,7 +159,7 @@ public void setNoBean3(Optional<Member> member) {
 }
 
 
-참고: @Nullable, Optional은 스프링 전반에 걸쳐서 지원된다. 예를 들어서 생성자 자동 주입에서 특정필드에만 사용해도 된다
+참고: @Nullable, Optional은 스프링 전반에 걸쳐서 지원된다. 예를 들어서 생성자 자동 주입에서 특정필드에만 사용해도 된다.
 
 
 생성자 주입을 권장하는 이유 
