@@ -85,7 +85,7 @@ FilterType 옵션
 4. REGEX: 정규 표현식
 	ex) org\.example\.Default.*
 
-5. CUSTOM: TypeFilter 이라는 인터페이스를 구현해서 처리
+5. CUSTOM: TypeFilter 이라는 인터페이스를 구현해서 처리.
 	ex) org.example.MyTypeFilter
 
 
