@@ -10,7 +10,7 @@ DIP, OCP 오류.
 사용법:
 ex) ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class).
 
-AppConfig에 속해있는 Bean 꺼내온 후 사용.
+AppConfig에 속해있는 Bean 꺼내온 후 사용
 
 스프링의 기본 빈 등록 방식은 싱글톤. But 요청시 새로운 객체를 생성하여 반환 가능.
 
