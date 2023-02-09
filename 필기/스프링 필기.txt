@@ -8,7 +8,7 @@ SingleTon Container (싱글톤 컨테이너)
 DIP, OCP 오류.
 
 사용법:
-ex) ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class).
+ex) ApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class)
 
 AppConfig에 속해있는 Bean 꺼내온 후 사용.
 
