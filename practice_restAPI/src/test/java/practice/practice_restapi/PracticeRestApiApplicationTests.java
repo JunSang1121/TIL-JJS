@@ -8,7 +8,7 @@ class PracticeRestApiApplicationTests {
 
     @Test
     void contextLoads() {
-	ok
+	asdf
     }
 
 }
