@@ -1,0 +1,46 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+
+
+public class Change : MonoBehaviour,IPointerEnterHandler, IPointerExitHandler
+{
+    public BTNType currentType;
+    public Transform buttonScale;
+    Vector3 defalutScale;
+
+    private void Start()
+    {
+        defalutScale = buttonScale.localScale;
+    }
+    public void OnBtnClick()
+    {
+        switch (currentType)
+        {
+            case BTNType.Scene_NewGame:
+                SceneLoad.LoadSceneHandle("Play",0);
+                break;
+            case BTNType.Scene_Load:
+                SceneLoad.LoadSceneHandle("Play",1);
+                break;
+            case BTNType.Scene_Option:
+                Debug.Log("옵션 (팝업으로 만든다 하여 구현 안함)");
+                break;
+            case BTNType.Scene_Quit:
+                Application.Quit();
+                Debug.Log("종료");
+                break;    
+        }
+    }
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        buttonScale.localScale = defalutScale*1.2f;
+    }
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        buttonScale.localScale = defalutScale;
+    }
+}
+

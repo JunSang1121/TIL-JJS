@@ -1,0 +1,16 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public enum BTNType
+{
+    Scene_NewGame,
+    Scene_Load,
+    Scene_Option,
+    Scene_Quit
+}
+
+public class Main_Menu : MonoBehaviour
+{
+    
+}
